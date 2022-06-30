@@ -5,10 +5,10 @@
 % inputs should be multitif file @ 2022-01-14
 
 clear; clc; close all;
-pathname = 'G:\PhD, PMMH, ESPCI\Experimental Data (EXTRACTED)\20220504-SU8_Fibers-Individual_triangularPillar\Invert objects to white color\'; % the path that contains the *.tif files to be processed
+pathname = 'G:\PhD, PMMH, ESPCI\Experimental Data (EXTRACTED)\20220624-SU8_Fibers-Individual_triangularPillar_uppoint\'; % the path that contains the *.tif files to be processed
 filelist = dir(fullfile(pathname,'*.tif'));
 
-for ii = 1:length(filelist)
+for ii = 1:size(filelist, 1)
     
     filename = filelist(ii).name;
     IP = [pathname,filename];
